@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tt2-WQ-9e5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MoviesViewController-->
+        <scene sceneID="UGe-2s-yzX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MoviesViewController" id="ryf-SC-IeY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7yS-hE-5Jk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldi-Gf-GeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-538"/>
+        </scene>
+        <!--FavouriteViewController-->
+        <scene sceneID="ExC-Ej-Ogs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavouriteViewController" id="B5x-3t-5KO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Nxz-JT-gel"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kJ-G3-o13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-254"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="U65-IT-oRs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileViewController" id="8Pk-lZ-STl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="MkK-5q-7Wo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ9-PU-8B6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="37"/>
+        </scene>
+        <!--Movies Tab Bar Controller-->
+        <scene sceneID="ZW9-a3-NSE">
+            <objects>
+                <tabBarController storyboardIdentifier="MoviesTabBarController" id="tt2-WQ-9e5" customClass="MoviesTabBarController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJw-9p-aAo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ryf-SC-IeY" kind="relationship" relationship="viewControllers" id="4S5-Vw-tT8"/>
+                        <segue destination="B5x-3t-5KO" kind="relationship" relationship="viewControllers" id="woG-rU-mER"/>
+                        <segue destination="8Pk-lZ-STl" kind="relationship" relationship="viewControllers" id="sHk-Wz-LvA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcF-o8-Fj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019" y="-263"/>
+        </scene>
+    </scenes>
+</document>
